@@ -1,0 +1,11 @@
+[
+  {"capability":"code","source":"github","outcome":"migrate","status":"verified","next_action":"none"},
+  {"capability":"schema","source":"drizzle migrations","outcome":"migrate","status":"verified","next_action":"none"},
+  {"capability":"records","source":"old Lovable Cloud database","outcome":"migrate","status":"pending","next_action":"user to provide CSV exports or skip; starter catalog seeded"},
+  {"capability":"auth identities","source":"old Lovable Cloud auth","outcome":"migrate","status":"pending","next_action":"user to provide users export or skip"},
+  {"capability":"auth methods","source":"email, Google, Apple","outcome":"migrate","status":"verified","next_action":"none"},
+  {"capability":"storage buckets","source":"avatars, logos, music, payment-proofs","outcome":"migrate","status":"verified","next_action":"all private (workspace blocks public); code uses signed URLs"},
+  {"capability":"uploaded file bytes","source":"old storage","outcome":"migrate","status":"pending","next_action":"re-upload logos/music from admin"},
+  {"capability":"secrets","source":"ADMIN_MASTER_PASSWORD, ADMIN_PASSWORD","outcome":"migrate","status":"pending","next_action":"user enters values via secure form"},
+  {"capability":"public endpoint","source":"/api/public/v2 reseller API","outcome":"preserve","status":"implemented","next_action":"publish; resellers keep same path"}
+]
